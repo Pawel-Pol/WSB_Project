@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-class stworz_macierz_tn:
+class StworzMacierzTN:
     # stworzenie macierzy przejsc markova na podstawie wprowadzonych parametrow
     # macierz wynikowa zawiera wartości procentowe
 
@@ -83,7 +83,7 @@ class stworz_macierz_tn:
         macierz_przejsc.iloc[1, 1] = macierz_wartosci.iloc[1, 1] / macierz_wartosci.iloc[1, :].sum()
         return macierz_przejsc * 100
 
-    def create_mc_yn(self):
+    def stworz_mp_tn(self):
         wczytany_plik = self.wczytaj_tabele()
         self.usun_zbedne_kolumny(wczytany_plik)
         pogrupowana_tabela = self.grupuj_daty(wczytany_plik)

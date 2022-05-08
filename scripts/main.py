@@ -4,7 +4,7 @@
 import klasa
 
 sciezka_pliku = 'Data/wplaty_klientow.xlsx'
-ilosc_wierzytelnosci = 7000
+ilosc_wierzytelnosci = 5000
 kolumna_kwota_wplat = 'kwota'
 kolumna_daty_wplat = 'data'
 kolumna_pakiet = 'id'
@@ -12,6 +12,6 @@ parametry = [sciezka_pliku,ilosc_wierzytelnosci,kolumna_kwota_wplat,kolumna_daty
              kolumna_pakiet]
 
 if __name__=='__main__':
-    przejscia = klasa.stworz_macierz_tn(parametry)
-    macierz_przejsc = przejscia.create_mc_yn()
+    przejscia = klasa.StworzMacierzTN(parametry)
+    macierz_przejsc = przejscia.stworz_mp_tn()
     print(macierz_przejsc)
