@@ -10,7 +10,8 @@ data_startowa = '2021-01-01'
 data_koncowa = '2022-01-31'
 najnizsza_wplata = 0
 najwyzsza_wplata = 2000
-parametry=[ilosc_wplat,ilosc_osob,data_startowa,data_koncowa,najnizsza_wplata,najwyzsza_wplata]
+parametry = [ilosc_wplat, ilosc_osob, data_startowa, data_koncowa, najnizsza_wplata, najwyzsza_wplata]
+
 
 def stworz_dane(parametry):
     """
@@ -44,7 +45,7 @@ def stworz_dane(parametry):
         tymczasowe = pd.DataFrame({'id':id,'kwota':wplata,'data':losowa_data}, index = [0])
         a = pd.concat([a,tymczasowe])
 
-    a.to_excel(f'../Data/wplaty_klientow.xlsx', index = False)
+    a.to_excel(f'../Data/wplaty_klientow.xlsx', index=False)
 
 if __name__=='__main__':
     stworz_dane(parametry)

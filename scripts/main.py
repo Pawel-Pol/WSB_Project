@@ -1,17 +1,20 @@
 # wprowadz odpowiednie parametry
 # w wyniku otrzymasz macierz z wartościami procentowymi
 
-import klasa
+from MacierzPrzejsc import TworcaMacierzyTN as TM
 
-sciezka_pliku = 'Data/wplaty_klientow.xlsx'
-ilosc_wierzytelnosci = 5000
-kolumna_kwota_wplat = 'kwota'
-kolumna_daty_wplat = 'data'
-kolumna_pakiet = 'id'
-parametry = [sciezka_pliku,ilosc_wierzytelnosci,kolumna_kwota_wplat,kolumna_daty_wplat,
-             kolumna_pakiet]
 
-if __name__=='__main__':
-    przejscia = klasa.StworzMacierzTN(parametry)
-    macierz_przejsc = przejscia.stworz_mp_tn()
+def main():
+    wplaty_z_banku = TM(
+        'Data/wplaty_klientow.xlsx', 5000, 'id', 'kwota', 'data'
+    )
+    macierz_przejsc = wplaty_z_banku.stworz_mp_tn()
     print(macierz_przejsc)
+    czy_zapisac = input('Czy zapisac plik t/n: ')
+    if czy_zapisac == 't':
+        TM.zapisz_table_do_excela(macierz_przejsc,
+                                  'Data/macierz_przejsc_bank.xlsx')
+
+
+if __name__ == '__main__':
+    main()

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a6eb24d-7549-42d8-90c6-effd6e38a230" name="Changes" comment="Poprawienie nazewnictwa, dodanie zmiennych do wygodniejszego operowania skryptami, rozbudowa readme">
+    <list default="true" id="1a6eb24d-7549-42d8-90c6-effd6e38a230" name="Changes" comment="dodanie docstringów">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/klasa.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/klasa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/wplaty_klientow.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/wplaty_klientow.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/klasa.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/MacierzPrzejsc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/stworz_przykladowe_dane.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/stworz_przykladowe_dane.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652011394464</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dodanie docstringów">
+      <created>1652030275785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652030275785</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +131,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Poprawienie nazewnictwa, dodanie zmiennych do wygodniejszego operowania skryptami, rozbudowa readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawienie nazewnictwa, dodanie zmiennych do wygodniejszego operowania skryptami, rozbudowa readme" />
+    <MESSAGE value="dodanie docstringów" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie docstringów" />
   </component>
 </project>
